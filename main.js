@@ -27,11 +27,10 @@ var PORT = 1339;
 // var apiUrl = v.API_HOST+':'+v.API_PORT;
 var server = http.createServer(function(req,res) {
   console.log('HTTP request',req.method,req.url);
-  switch (req.url)
-  {
-    default:
-      file.serve(req,res);
-  }
+  req.addListener('end', function () {
+    // Serve files!
+    file.serve(req, res);
+  }).resume();
   console.log('HTTP respone',res.statusCode);
 }).listen(PORT);
 
