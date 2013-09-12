@@ -93,7 +93,7 @@ function disconnectHandler(io,source) {
   logger.info(util.inspect(s));
 }
 
-var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(server, {log:false});
 io.sockets.on('connection', function(socket) {
 
   connectHandler(io,socket,'socket.io.server');
