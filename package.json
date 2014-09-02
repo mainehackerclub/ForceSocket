@@ -1,0 +1,33 @@
+{
+  "name": "ForceSocket",
+  "version": "1.0.0",
+  "description": "Socket.io & D3.js force layout.",
+  "main": "main.js",
+  "dependencies": {
+    "color": "^0.7.1",
+    "node-static": "^0.7.4",
+    "request": "^2.40.0",
+    "socket.io": "^1.0.6",
+    "winston": "^0.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mainehackerclub/ForceSocket.git"
+  },
+  "keywords": [
+    "visualization",
+    "real-time",
+    "fun",
+    "play"
+  ],
+  "author": "Garrett Wilkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mainehackerclub/ForceSocket/issues"
+  },
+  "homepage": "https://github.com/mainehackerclub/ForceSocket"
+}
